@@ -1,0 +1,5 @@
+server/apache-tomcat-8.5.23/
+.idea
+target
+**/*.iml
+**/.DS_Store
