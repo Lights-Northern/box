@@ -45,5 +45,22 @@
         </div>
     </div>
 </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h5>简单实例</h5>
+            </div>
+            <div class="panel-body">
+                <div class="btn-group" role="group" aria-label="...">
+                    <a type="button" class="btn btn-default" href="./maps.do">图表功能</a>
+                    <a type="button" class="btn btn-primary">短信发送</a>
+                    <a type="button" class="btn btn-success">手机导航</a>
+                    <a type="button" class="btn btn-success" href="./live.do">Web直播观看</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

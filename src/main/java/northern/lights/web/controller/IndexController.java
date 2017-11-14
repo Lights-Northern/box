@@ -14,6 +14,7 @@ import java.util.List;
 public class IndexController extends CoreController {
     /**
      * 首页
+     *
      * @return HTML
      */
     @RequestMapping(value = "/", method = RequestMethod.GET)
@@ -21,14 +22,26 @@ public class IndexController extends CoreController {
         return "index";
     }
 
+    @RequestMapping(value = "/maps.do", method = RequestMethod.GET)
+    public String maps() {
+        return "maps";
+    }
+
+    @RequestMapping(value = "/live.do", method = RequestMethod.GET)
+    public String live() {
+        return "live";
+    }
+
     /**
      * 获取版本号
+     *
      * @return JSON
      */
-    @RequestMapping(value = "/version.do", method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    @RequestMapping(value = "/version.do", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     @ResponseBody
     public String version() {
         List<Version> versionList = iVersionDao.getVersions();
         return JSON.toJSONString(versionList);
     }
+
 }
